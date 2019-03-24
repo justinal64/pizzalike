@@ -10,18 +10,18 @@
 npm install --save pizzalike
 ```
 
+![Alt text](./src/img/pizza.svg?raw=true "Title")
+
 ## Usage
 
 ```tsx
-import * as React from 'react'
+import * as React from "react";
 
-import MyComponent from 'pizzalike'
+import MyComponent from "pizzalike";
 
 class Example extends React.Component {
-  render () {
-    return (
-      <MyComponent />
-    )
+  render() {
+    return <MyComponent />;
   }
 }
 ```
