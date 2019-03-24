@@ -10,7 +10,7 @@
 npm install --save pizzalike
 ```
 
-![Alt text](./src/img/pizza.svg?raw=true "Title")
+![Alt text](/src/img/pizza.svg?raw=true "Title")
 
 ## Usage
 
