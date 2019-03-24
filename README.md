@@ -1,6 +1,8 @@
+<div align="center">
 # pizzalike
 
 <img src="/src/img/pizza.svg" alt="drawing" width="100"/>
+</div>
 
 > react component library
 
