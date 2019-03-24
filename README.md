@@ -10,7 +10,7 @@
 npm install --save pizzalike
 ```
 
-![Alt text](/src/img/pizza.svg =100x)
+![Alt text](/src/img/pizza.svg) {width: 100px;}
 
 ## Usage
 
