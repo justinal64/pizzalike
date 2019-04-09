@@ -1,5 +1,5 @@
 <div align="center">
-# pizzalike
+<h1>pizzalike</h1>
 
 <img src="/src/img/pizza.svg" alt="drawing" width="100"/>
 </div>
