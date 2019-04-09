@@ -1,4 +1,8 @@
-# pizzalike
+<div align="center">
+<h1>pizzalike</h1>
+
+<img src="/src/img/pizza.svg" alt="drawing" width="100"/>
+</div>
 
 > react component library
 
@@ -13,15 +17,13 @@ npm install --save pizzalike
 ## Usage
 
 ```tsx
-import * as React from 'react'
+import * as React from "react";
 
-import MyComponent from 'pizzalike'
+import MyComponent from "pizzalike";
 
 class Example extends React.Component {
-  render () {
-    return (
-      <MyComponent />
-    )
+  render() {
+    return <MyComponent />;
   }
 }
 ```
