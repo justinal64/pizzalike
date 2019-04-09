@@ -8,7 +8,7 @@ export default class App extends Component {
     return (
       <div>
         <ExampleComponent text="Modern React component module" />
-        <Button text="This is text" />
+        <Button text="This is a test" />
       </div>
     );
   }
