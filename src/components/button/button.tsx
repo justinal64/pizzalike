@@ -3,14 +3,14 @@
  */
 
 import * as React from "react";
-// import styles from "./styles.css";
+import "./styles.css";
 
-export type Props = { text: string };
+export type Props = { text: string; class: string };
 
-export default class Button extends React.Component<Props> {
-  render() {
-    const { text } = this.props;
-
-    return <button>{text}</button>;
-  }
+export function Button(props: Props) {
+  return (
+    <div>
+      <button className={props.class}>Primary{props.text}</button>
+    </div>
+  );
 }
