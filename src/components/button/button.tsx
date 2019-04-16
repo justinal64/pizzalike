@@ -3,14 +3,11 @@
  */
 
 import * as React from "react";
-import "./styles.css";
+import styles from "./styles.css";
 
 export type Props = { text: string; class: string };
 
 export function Button(props: Props) {
-  return (
-    <div>
-      <button className={props.class}>Primary{props.text}</button>
-    </div>
-  );
+  // work on styling the button
+  return <button className={styles.btn}>{props.text}</button>;
 }
