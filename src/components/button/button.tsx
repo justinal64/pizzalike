@@ -3,25 +3,14 @@
  */
 
 import * as React from "react";
-import styles from "./styles.css";
-import { test } from "../helpers";
+import "./styles.css";
+import { theme } from "../helpers";
+import { btnType } from "../alias/button";
 
-export type classNames =
-  | "primary"
-  | "secondary"
-  | "success"
-  | "danger"
-  | "info"
-  | "light"
-  | "dark"
-  | "link";
-type Props = { text: string; class: classNames };
+type Props = { text: string; class: btnType };
 
 export function Button(props: Props) {
+  const className = theme(props.class);
   // work on styling the button
-  return (
-    <button onClick={test} className={styles.btn}>
-      {props.text}
-    </button>
-  );
+  return <button className={className}>{props.text}</button>;
 }

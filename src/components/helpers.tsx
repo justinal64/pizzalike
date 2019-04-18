@@ -1,5 +1,8 @@
-const test = () => {
-  console.log("This is a test");
+import { btnType } from "./alias/button";
+
+const theme = (btnType: btnType) => {
+  console.log(btnType);
+  return "btn-dark";
 };
 
-export { test };
+export { theme };
