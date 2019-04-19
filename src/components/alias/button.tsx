@@ -3,6 +3,7 @@ export type btnType =
   | "secondary"
   | "success"
   | "danger"
+  | "warning"
   | "info"
   | "light"
   | "dark"
