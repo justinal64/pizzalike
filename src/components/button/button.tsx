@@ -7,7 +7,13 @@ import "./styles.css";
 import { theme } from "../helpers";
 import { btnType } from "../alias/button";
 
-type Props = { text: string; class: btnType; onclick?: any };
+// type Props = { text: string; class: btnType; onclick?: function };
+
+interface Props {
+  text: string;
+  class: btnType;
+  onclick?: any; // TODO: This needs to be fixed...
+}
 
 const onClickHelper = () => {
   console.log(
