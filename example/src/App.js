@@ -15,6 +15,7 @@ export default class App extends Component {
         <Button text="Light" class="light" />
         <Button text="Dark" class="dark" />
         <Button text="link" class="link" />
+        <Button text="linkhiudiwudgqiu" class="linkhiudiwudgqiu" />
       </div>
     );
   }

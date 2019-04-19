@@ -1,18 +1,21 @@
 import { btnType } from "./alias/button";
-
-// const isEmptyStr = () => {}
+const possibleTypes = [
+  "primary",
+  "secondary",
+  "success",
+  "danger",
+  "warning",
+  "info",
+  "light",
+  "dark",
+  "link"
+];
 
 const theme = (btnType: btnType) => {
-  if (btnType === "primary") return "btn-primary";
-  else if (btnType === "secondary") return "secondary";
-  else if (btnType === "success") return "success";
-  else if (btnType === "danger") return "danger";
-  else if (btnType === "warning") return "warning";
-  else if (btnType === "info") return "info";
-  else if (btnType === "light") return "light";
-  else if (btnType === "dark") return "dark";
-  else if (btnType === "link") return "link";
-  else return "dark";
+  // I'm doing this check for anyone using a component in a .js file
+  if (possibleTypes.indexOf(btnType.toLowerCase()) > -1)
+    return btnType.toLowerCase();
+  else return "primary";
 };
 
 export { theme };
