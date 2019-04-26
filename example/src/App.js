@@ -22,9 +22,26 @@ export default class App extends Component {
         <Button text="link" class="link" />
         <Button text="linkhiudiwudgqiu" class="linkhiudiwudgqiu" />
         <h1>Example of Inputs</h1>
-        <div className="form">
-          <Input labelText="Test" placeholder="Align Left" position="left" />
-          <Input labelText="Test" placeholder="Align Right" position="right" />
+        {/* This would need to be the form dialog?? */}
+        <div className="form container">
+          <Input
+            labelText="Test"
+            newLine={true}
+            placeholder="Align Left"
+            position="left"
+          />
+          <Input
+            labelText="Test"
+            newLine={false}
+            placeholder="Align Right"
+            position="right"
+          />
+          <Input
+            labelText="Test"
+            newLine={true}
+            placeholder="Align Center"
+            position="center"
+          />
         </div>
       </div>
     );

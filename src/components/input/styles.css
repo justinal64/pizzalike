@@ -1,17 +1,15 @@
 .center {
-    text-align: "center";
+    align-content: center;
 }
 
 .right {
-    text-align: right;
-    display: inline;
+    align-content: flex-start;
 }
 
 .left {
-    text-align: left;
-    display: inline;
+    align-content: flex-end;
 }
 
 .newline {
-    display: block;
+    flex: 0 0 100%;
 }

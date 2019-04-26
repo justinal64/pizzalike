@@ -26,10 +26,9 @@ const theme = (btnType: btnType) => {
 const alignment = (alignment: string) => {
   if (alignment === "right") return "right";
   else if (alignment === "left") return "left";
+  else if (alignment === "center") return "center";
 
   return "right";
-  console.log("alignment: ", alignment);
-  console.log("What is the alignment??");
 };
 
 export { theme, alignment };
