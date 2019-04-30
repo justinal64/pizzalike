@@ -18,4 +18,17 @@ const theme = (btnType: btnType) => {
   else return "primary";
 };
 
-export { theme };
+// This area is a helper class for an input
+// newline = block
+// left = text-align=left
+// right = text-align=right
+// center = text-align=center
+const alignment = (alignment: string) => {
+  if (alignment === "right") return "right";
+  else if (alignment === "left") return "left";
+  else if (alignment === "center") return "center";
+
+  return "right";
+};
+
+export { theme, alignment };

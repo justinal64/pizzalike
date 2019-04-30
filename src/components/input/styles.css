@@ -1,0 +1,15 @@
+.center {
+    align-content: center;
+}
+
+.right {
+    align-content: flex-start;
+}
+
+.left {
+    align-content: flex-end;
+}
+
+.newline {
+    flex: 0 0 100%;
+}
