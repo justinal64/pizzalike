@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { Button, Input } from "pizzalike";
+import { Button, Input, Card } from "pizzalike";
 import "./index.css";
 const test = () => {
   console.log("Test is working correctly");
@@ -22,7 +22,6 @@ export default class App extends Component {
         <Button text="link" class="link" />
         <Button text="linkhiudiwudgqiu" class="linkhiudiwudgqiu" />
         <h1>Example of Inputs</h1>
-        {/* This would need to be the form dialog?? */}
         <div className="form container">
           <Input
             labelText="Test"
@@ -43,6 +42,14 @@ export default class App extends Component {
             position="center"
           />
         </div>
+        <h1>Example of Card Component</h1>
+        <Card
+          imgSrc="https://cdn57.androidauthority.net/wp-content/uploads/2017/11/lineage-2.jpg"
+          title="Lineage 2 is still cool"
+          cardText="This is a card text"
+          btnText="This is btnText"
+          btnClass="primary"
+        />
       </div>
     );
   }
