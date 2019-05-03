@@ -17,17 +17,23 @@ interface Props {
 }
 
 export function Card(props: Props) {
-  const { title, cardText, btnText, btnClass } = props;
+  const { title, cardText, btnClass } = props;
   return (
     <div
       style={{
         width: "350px",
         height: "350px",
         background: "pink",
-        textAlign: "center"
+        textAlign: "center",
+        boxShadow: "5px 5px 10px gray",
+        margin: "0 auto"
       }}
     >
-      {/* <img className="card-img" src={imgSrc} /> */}1 ----- 2 ----- 3
+      <div>
+        <span style={{ color: "blue" }}>1</span>
+        <span>-----2</span>
+        <span>-----3</span>
+      </div>
       <div className="card-body">
         <h1>{title}</h1>
         <Input
@@ -51,7 +57,8 @@ export function Card(props: Props) {
           position="center"
         />
         <p className="card-text">{cardText}</p>
-        <Button text={btnText} class={btnClass} />
+        <Button text="Back" class={btnClass} />
+        <Button text="Next" class={btnClass} />
       </div>
     </div>
   );

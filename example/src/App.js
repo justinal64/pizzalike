@@ -47,7 +47,7 @@ export default class App extends Component {
           imgSrc="https://cdn57.androidauthority.net/wp-content/uploads/2017/11/lineage-2.jpg"
           title="Lineage 2 is still cool"
           cardText="This is a card text"
-          btnText="This is btnText"
+          btnText="Submit"
           btnClass="primary"
         />
       </div>
