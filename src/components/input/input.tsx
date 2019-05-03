@@ -11,7 +11,7 @@ interface Props {
   labelText: string;
   placeholder: string;
   position: string;
-  newLine: boolean;
+  newLine?: boolean;
 }
 
 // How do I bump the input to the next lin ebut allow the next input to be on the same line.......
