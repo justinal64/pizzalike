@@ -4,11 +4,12 @@
 
 import * as React from "react";
 import "./styles.css";
+import { MouseEventHandler } from "react";
 
 interface Props {
   text: string;
   // class: btnType;
-  onclick?: any; // TODO: This needs to be fixed...
+  onclick?: MouseEventHandler; // TODO: This needs to be fixed...
 }
 
 const onClickHelper = () => {
@@ -16,7 +17,6 @@ const onClickHelper = () => {
 };
 
 export function Circle(props: Props) {
-  // const className = theme(props.class);
   const onClick = props.onclick ? props.onclick : onClickHelper;
   return (
     <svg height="100" width="100">
