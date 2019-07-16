@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { Button, Input } from "pizzalike";
+import { Button, Input, Circle } from "pizzalike";
 import "./index.css";
 const test = () => {
   console.log("Test is working correctly");
@@ -19,8 +19,6 @@ export default class App extends Component {
         <Button text="Info" class="info" />
         <Button text="Light" class="light" />
         <Button text="Dark" class="dark" />
-        <Button text="link" class="link" />
-        <Button text="linkhiudiwudgqiu" class="linkhiudiwudgqiu" />
         <h1>Example of Inputs</h1>
         {/* This would need to be the form dialog?? */}
         <div className="form container">
@@ -42,6 +40,10 @@ export default class App extends Component {
             placeholder="Align Center"
             position="center"
           />
+        </div>
+        <div>
+          <h1>Circle</h1>
+          <Circle onclick={() => console.log("sorry")} />
         </div>
       </div>
     );
