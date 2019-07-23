@@ -5,19 +5,20 @@
 import * as React from "react";
 import "./styles.css";
 import { MouseEventHandler } from "react";
+import { randomColor } from "../helpers";
 
 interface Props {
   text: string;
-  // class: btnType;
-  onclick?: MouseEventHandler; // TODO: This needs to be fixed...
+  onclick?: MouseEventHandler;
 }
 
-const onClickHelper = () => {
-  console.log("Pass a function to override!");
+const changeColor = (event: any) => {
+  // TODO: remove type any
+  event.target.setAttribute("fill", randomColor());
 };
 
 export function Circle(props: Props) {
-  const onClick = props.onclick ? props.onclick : onClickHelper;
+  const onClick = props.onclick ? props.onclick : changeColor;
   return (
     <svg height="100" width="100">
       <circle
