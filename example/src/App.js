@@ -43,7 +43,7 @@ export default class App extends Component {
         </div>
         <div>
           <h1>Circle</h1>
-          <Circle onclick={e => (e.target.style.fill = "transparent")} />
+          <Circle />
         </div>
       </div>
     );
